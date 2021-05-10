@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Device trees -->
+    <project name="Spark-Devices/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="fire" />
+
+    <!-- Vendor trees -->
+    <project name="Spark-Devices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="fire" />
+    <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="eleven" />
+
+    <!-- Kernel tree and clang -->
+    <project name="Spark-Devices/kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="fire" clone-depth="1" />
+    <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="github" revision="ruby-12" clone-depth="1" />
+
+    <!-- Needed custom HALs -->
+    <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
+    <remove-project name="android_vendor_qcom_opensource_power" />
+    <remove-project name="android_vendor_qcom_opensource_healthd-ext" />
+    
+    <remove-project name="android_hardware_qcom_audio" />
+    <remove-project name="android_hardware_qcom_display"/>
+    <remove-project name="android_hardware_qcom_media" />
+    
+    <project path="hardware/qcom-caf/sm8150/audio" name="spkal01/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="fire" />
+    <project path="hardware/qcom-caf/sm8150/display" name="ArrowOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="github" revision="arrow-11.0-caf-sm8150" />
+    <project path="hardware/qcom-caf/sm8150/media" name="ArrowOS/android_hardware_qcom_media" groups="qcom" remote="github" revision="arrow-11.0-caf-sm8150" />
+    <project path="vendor/qcom/opensource/commonsys-intf/display" name="ArrowOS/android_vendor_qcom_opensource_display-commonsys-intf" remote="github" revision="arrow-11.0" />
+    <project path="vendor/qcom/opensource/power" name="ArrowOS/android_vendor_qcom_opensource_power" remote="github" revision="arrow-11.0" />
+    <project path="vendor/qcom/opensource/health-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" remote="github" revision="lineage-18.1" />
+    
+</manifest>
