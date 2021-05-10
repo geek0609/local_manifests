@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    
+    <remote  name="ssh" fetch="ssh://git@github.com/"/>
+
+    <!-- Device trees -->
+    <project name="Spark-Devices/android_device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="ssh" revision="spark" />
+
+    <!-- Vendor trees -->
+    <project name="Spark-Devices/android_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="ssh" revision="spark" />
+    <project name="Spark-Devices/android_vendor_miuicamera" path="vendor/miuicamera" remote="ssh" revision="spark-ginkgo" />
+
+    <!-- Kernel tree and clang -->
+    <project name="Spark-Devices/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="ssh" revision="spark" />
+    <project name="Spark-Devices/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="ssh" revision="ruby-12" />
+
+    <remove-project name="platform/hardware/nxp/secure_element" />
+    <remove-project name="platform/hardware/nxp/nfc" />
+    <remove-project name="hardware_xiaomi" />
+
+    <!-- Hals -->
+    
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" />
+    <remove-project name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" />
+    
+    <remove-project name="LineageOS/android_hardware_qcom_media" />
+    <project name="ArrowOS/android_hardware_qcom_media" path="hardware/qcom-caf/sm8150/media" remote="ssh" revision="arrow-12.0-caf-sm8150" />
+
+    <remove-project name="LineageOS/android_hardware_qcom_audio" />
+    <project name="ArrowOS/android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="ssh" revision="arrow-12.0-caf-sm8150" />
+
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <project name="ArrowOS/android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" remote="ssh" revision="arrow-12.0-caf-sm8150" />
+    
+    <project name="ArrowOS/android_vendor_nxp_opensource_packages_apps_Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="ssh" revision="arrow-12.0" />
+    <project name="ArrowOS/android_vendor_nxp_opensource_external_libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" remote="ssh" revision="arrow-12.0" />
+    <project name="ArrowOS/android_vendor_nxp_interfaces_opensource_nfc" path="vendor/nxp/opensource/interfaces/nfc" remote="ssh" revision="arrow-12.0" />
+    <project name="ArrowOS/android_vendor_nxp_opensource_frameworks" path="vendor/nxp/opensource/commonsys/frameworks" remote="ssh" revision="arrow-12.0" />
+    
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_hidlimpl" />
+    <project name="ArrowOS/android_vendor_nxp_opensource_hidlimpl" path="vendor/nxp/opensource/sn100x/hidlimpl" remote="ssh" revision="arrow-12.0-sn100x" />
+    <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="ArrowOS/android_vendor_nxp_opensource_hidlimpl" remote="ssh" revision="arrow-12.0-pn5xx" />  
+    
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_halimpl" />
+    <project name="ArrowOS/android_vendor_nxp_opensource_halimpl" path="vendor/nxp/opensource/sn100x/halimpl" remote="ssh" revision="arrow-12.0-sn100x" />
+    <project name="ArrowOS/android_vendor_nxp_opensource_halimpl" path="vendor/nxp/opensource/pn5xx/halimpl" remote="ssh" revision="arrow-12.0-pn5xx" />
+
+</manifest>
