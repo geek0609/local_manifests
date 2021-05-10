@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Using hubgit to avoid conflict -->
+    <remote name ="hubgit" fetch = "https://github.com"/>
+    <!-- Device trees -->
+    <project name="Sakura-Devices/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="hubgit" revision="R" />
+
+    <!-- Vendor trees -->
+    <project name="Sakura-Devices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="hubgit" revision="R" />
+    <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="hubgit" revision="eleven" />
+
+    <!-- Kernel tree and clang -->
+    <project name="ghostrider-reborn/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="hubgit" revision="11.0" />
+    <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="hubgit" revision="ruby-12" />
+</manifest>
