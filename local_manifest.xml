@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote  name="ssh" fetch="ssh://git@github.com" />
+
+    <!-- Device trees -->
+    <project name="Spark-Devices/android_device_xiaomi_mojito-priv" path="device/xiaomi/mojito" remote="ssh" revision="spark" depth="0" />
+    <project name="Spark-Devices/android_device_xiaomi_mojito-common" path="device/xiaomi/sm6150-common" remote="ssh" revision="spark" depth="0" />
+
+    <!-- Vendor trees -->
+    <project name="Spark-Devices/android_vendor_xiaomi_mojito" path="vendor/xiaomi/mojito" remote="ssh" revision="spark" depth="0" />
+    <project name="Spark-Devices/android_vendor_xiaomi_mojito-common" path="vendor/xiaomi/sm6150-common" remote="ssh" revision="spark" depth="0" />
+
+    <!-- Kernel tree -->
+    <project name="Spark-Devices/android_kernel_xiaomi_mojito" path="kernel/xiaomi/sm6150" remote="ssh" revision="spark" />
+    <project name="Spark-Devices/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" path="prebuilts/gcc/linux-x86/aarch64/arm64-gcc" remote="ssh" revision="12.0.0" />
+    <project name="Spark-Devices/android_prebuilts_gcc_linux-x86_arm_arm-eabi" path="prebuilts/gcc/linux-x86/arm/arm-eabi" remote="ssh" revision="12.0.0" />
+
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <project name="Spark-Devices/hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="ssh" revision="twelve" />
+</manifest>
