@@ -9,6 +9,9 @@
     <project name="geek0609/vendor_xiaomi_mojito" path="vendor/xiaomi/mojito" remote="gh" revision="r" />
     <project name="geek0609/vendor_xiaomi_sm6150-common" path="vendor/xiaomi/sm6150-common" remote="gh" revision="eleven" />
     <project name="pcoopergit/vendor_xiaomi_ANXCamera" path="vendor/xiaomi/ANXCamera" remote="gh" revision="185R" />
+
+    <!-- HW/Xiaomi -->>
+    <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="gh" revision="lineage-18.1" />
     
     <!-- Kernel tree -->
     <project name="PixelExperience-Devices/kernel_xiaomi_mojito" path="kernel/xiaomi/sm6150" remote="gh" revision="eleven" />
