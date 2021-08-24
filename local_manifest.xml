@@ -12,4 +12,8 @@
     
     <!-- Kernel tree -->
     <project name="PixelExperience-Devices/kernel_xiaomi_mojito" path="kernel/xiaomi/sm6150" remote="gh" revision="eleven" />
+
+    <!-- Proton Blur -->>
+    <remove-project name="frameworks_native" />
+    <project name="ProjectSakura/frameworks_native" path="frameworks/native" remote="gh" revision="11-blur" />
 </manifest>
