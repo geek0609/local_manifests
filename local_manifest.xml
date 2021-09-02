@@ -13,16 +13,88 @@
     <project name="ghostrider-reborn/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="hubgit" revision="11.0" />
     <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="hubgit" revision="ruby-12" />
 
-    <!-- Required HALs -->
-    <remove-project name="android_hardware_qcom_audio" />
-    <remove-project name="android_hardware_qcom_display"/>
-    <remove-project name="android_hardware_qcom_media" />
-    <project path="hardware/qcom-caf/sm8150/audio" name="ArrowOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="arrow-11.0-caf-sm8150" />
-    <project path="hardware/qcom-caf/sm8150/display" name="ArrowOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="github" revision="arrow-11.0-caf-sm8150" />
-    <project path="hardware/qcom-caf/sm8150/media" name="ArrowOS/android_hardware_qcom_media" groups="qcom" remote="github" revision="arrow-11.0-caf-sm8150" />
-    
     <remove-project name="AOSPA/android_packages_apps_Settings"/>
     <remove-project name="AOSPA/android_frameworks_base"/>
+    <remove-project name="AOSPA/android_vendor_pa"/>
+    <remove-project name="AOSPA/android_external_zlib"/>
+    <remove-project name="AOSPA/android_packages_apps_ParanoidLauncher"/>
+    <remove-project name="AOSPA/android_system_memory_lmkd"/>
+    <remove-project name="AOSPA/android_external_sqlite"/>
+    <remove-project name="AOSPA/android_system_core"/>
+    <remove-project name="AOSPA/android_bionic"/>
+    <remove-project name="AOSPA/android_system_sepolicy"/>
+    <remove-project name="AOSPA/android_frameworks_av"/>
+    <remove-project name="AOSPA/android_art"/>
+    <remove-project name="AOSPA/android_kernel_build"/>
+    <remove-project name="AOSPA/android_external_arm-optimized-routines"/>
+    <remove-project name="AOSPA/android_external_cpu_features"/>
+    <remove-project name="AOSPA/android_external_jemalloc_new"/>
+    <remove-project name="AOSPA/android_hardware_qcom_gps"/>
+    <remove-project name="AOSPA/android_external_openssh"/>
+    <remove-project name="AOSPA/android_build"/>
+    <remove-project name="AOSPA/android_device_qcom_common"/>
+    <remove-project name="AOSPA/android_packages_services_Telecomm"/>
+    <remove-project name="AOSPA/android_external_f2fs-tools"/>
+    <remove-project name="AOSPA/android_frameworks_native"/>
+    <remove-project name="AOSPA/android_build_soong"/>
+    <remove-project name="AOSPA/android_packages_apps_CellBroadcastReceiver"/>
+    <remove-project name="AOSPA/android_bootable_recovery"/>
+    <remove-project name="AOSPA/android_system_iorap"/>
+
     <project path="packages/apps/Settings" name="whyredfire/aospa-packages_apps_Settings" remote="github" revision="ruby" />
     <project path="frameworks/base" name="whyredfire/aospa-frameworks_base" remote="github" revision="ruby" />    
+    <project path="vendor/pa" name="pa-gr/android_vendor_pa" remote="hubgit" revision="ruby"/>
+    <project path="external/zlib" name=" pa-gr/android_external_zlib-ng" remote="hubgit" revision="ruby"/>
+    <project path="packages/apps/ParanoidLauncher" name="pa-gr/android_packages_apps_ParanoidLauncher" remote="hubgit" revision="ruby"/>
+    <project path="system/memory/lmkd" name="pa-gr/android_system_memory_lmkd" remote="hubgit" revision="ruby"/>
+    <project path="external/sqlite" name="pa-gr/android_external_sqlite" remote="hubgit" revision="ruby"/>
+    <project path="system/core" name="pa-gr/android_system_core" remote="hubgit" revision="ruby"/>
+    <project path="bionic" name="pa-gr/android_bionic" remote="hubgit" revision="ruby"/>
+    <project path="system/sepolicy" name="pa-gr/android_system_sepolicy" remote="hubgit" revision="ruby"/>
+    <project path="frameworks/av" name="pa-gr/android_frameworks_av" remote="hubgit" revision="ruby"/>
+    <project path="art" name="pa-gr/android_art" remote="hubgit" revision="ruby"/>
+    <project path="kernel/build" name="pa-gr/android_kernel_build" remote="hubgit" revision="ruby"/>
+    <project path="external/arm-optimized-routines" name="pa-gr/android_external_arm-optimized-routines" remote="hubgit" revision="ruby"/>
+    <project path="external/cpu/features" name="pa-gr/android_external_cpu_features" remote="hubgit" revision="ruby"/>
+    <project path="external/jemalloc/new" name="pa-gr/android_external_jemalloc_new" remote="hubgit" revision="ruby"/>
+    <project path="hardware/qcom/gps" name="pa-gr/android_hardware_qcom_gps" remote="hubgit" revision="ruby-smxxx0"/>
+    <project path="external/openssh" name="pa-gr/android_external_openssh" remote="hubgit" revision="ruby"/>
+    <project path="build" name="pa-gr/android_build" remote="hubgit" revision="ruby"/>
+    <project path="device/qcom/common" name="pa-gr/android_device_qcom_common" remote="hubgit" revision="ruby"/>
+    <project path="packages/services/Telecomm" name="pa-gr/android_packages_services_Telecomm" remote="hubgit" revision="ruby"/>
+    <project path="external/f2fs-tools" name="pa-gr/android_external_f2fs-tools" remote="hubgit" revision="ruby"/>
+    <project path="frameworks/native" name="pa-gr/android_frameworks_native" remote="hubgit" revision="ruby"/>
+    <project path="build/soong" name="pa-gr/android_build_soong" remote="hubgit" revision="ruby"/>
+    <project path="packages/apps/CellBroadcastReceiver" name="pa-gr/android_packages_apps_CellBroadcastReceiver" remote="hubgit" revision="ruby"/>
+    <project path="bootable/recovery" name="pa-gr/android_bootable_recovery" remote="hubgit" revision="ruby"/>
+    <project path="system/iorap" name="pa-gr/android_system_iorap" remote="hubgit" revision="ruby"/>
+
+
+    <!-- 
+    https://github.com/pa-gr/android_packages_apps_ParanoidLauncher
+    https://github.com/pa-gr/android_system_memory_lmkd
+    https://github.com/pa-gr/android_external_sqlite
+    https://github.com/pa-gr/android_system_core
+    https://github.com/pa-gr/android_bionic
+    https://github.com/pa-gr/android_system_sepolicy
+    https://github.com/pa-gr/android_frameworks_av
+    https://github.com/pa-gr/android_art
+    https://github.com/pa-gr/android_kernel_build
+    https://github.com/pa-gr/android_external_arm-optimized-routines
+    https://github.com/pa-gr/android_external_cpu_features
+    https://github.com/pa-gr/android_external_jemalloc_new
+    https://github.com/pa-gr/android_hardware_qcom_gps
+    https://github.com/pa-gr/android_external_openssh
+    https://github.com/pa-gr/android_build
+    https://github.com/pa-gr/android_device_qcom_common
+    https://github.com/pa-gr/android_packages_services_Telecomm
+    https://github.com/pa-gr/android_external_f2fs-tools
+    https://github.com/pa-gr/android_frameworks_native
+    https://github.com/pa-gr/android_build_soong
+    https://github.com/pa-gr/android_packages_apps_CellBroadcastReceiver
+    https://github.com/pa-gr/android_bootable_recovery
+    https://github.com/pa-gr/android_system_iorap
+    -->
+
+
 </manifest>
