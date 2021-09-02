@@ -33,7 +33,7 @@
     <!-- remove-project name="AOSPA/android_external_openssh"/-->
     <remove-project name="AOSPA/android_build"/>
     <remove-project name="AOSPA/android_device_qcom_common"/>
-    <remove-project name="AOSPA/android_packages_services_Telecomm"/>
+    <!-- remove-project name="AOSPA/android_packages_services_Telecomm"/ -->
     <remove-project name="AOSPA/android_external_f2fs-tools"/>
     <remove-project name="AOSPA/android_frameworks_native"/>
     <remove-project name="AOSPA/android_build_soong"/>
