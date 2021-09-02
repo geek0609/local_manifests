@@ -30,7 +30,7 @@
     <!-- remove-project name="AOSPA/android_external_cpu_features"/-->
     <!-- remove-project name="AOSPA/android_external_jemalloc_new"/-->
     <!-- remove-project name="AOSPA/android_hardware_qcom_gps"/-->
-    <remove-project name="AOSPA/android_external_openssh"/>
+    <!-- remove-project name="AOSPA/android_external_openssh"/-->
     <remove-project name="AOSPA/android_build"/>
     <remove-project name="AOSPA/android_device_qcom_common"/>
     <remove-project name="AOSPA/android_packages_services_Telecomm"/>
