@@ -4,10 +4,10 @@
     <remote name ="github" fetch = "https://github.com"/>
     
     <!-- Device trees -->
-    <project name="dsashwin/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="wip" />
+    <project name="RadiantDevices/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="eleven" />
 
     <!-- Vendor trees -->
-    <project name="ArrowOS-Devices/android_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="arrow-11.0" />
+    <project name="RadiantDevices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="eleven" />
     <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="eleven" />
 
     <!-- Kernel tree and clang -->
@@ -29,5 +29,4 @@
     <!-- Custom Projects -->
     <remove-project name="frameworks_native" />
     <project path="frameworks/native" name="whyredfire/frameworks_native" remote="github" revision="eleven" />
-    
 </manifest>
