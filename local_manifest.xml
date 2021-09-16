@@ -3,7 +3,7 @@
     <remote name ="gh" fetch = "https://github.com"/>
     <!-- Device trees -->
     <project name="geek0609/device_xiaomi_mojito" path="device/xiaomi/mojito" remote="gh" revision="radiant_r" />
-    <project name="geek0609/device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" remote="gh" revision="eleven" />
+    <project name="geek0609/device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" remote="gh" revision="11_radiant" />
 
     <!-- Vendor trees -->
     <project name="geek0609/vendor_xiaomi_mojito" path="vendor/xiaomi/mojito" remote="gh" revision="r" />
