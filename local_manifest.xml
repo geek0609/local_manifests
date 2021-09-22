@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name ="gh" fetch = "https://github.com"/>
     <!-- Device trees -->
-    <project name="geek0609/device_xiaomi_mojito" path="device/xiaomi/mojito" remote="gh" revision="r" />
-    <project name="geek0609/device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" remote="gh" revision="eleven" />
+    <project name="device_xiaomi_mojito" path="device/xiaomi/mojito" remote="Sakura-Devices" revision="11" />
+    <project name="device_xiaomi_mojito-common" path="device/xiaomi/sm6150-common" remote="Sakura-Devices" revision="11" />
 
     <!-- Vendor trees -->
-    <project name="geek0609/vendor_xiaomi_mojito" path="vendor/xiaomi/mojito" remote="gh" revision="r" />
-    <project name="geek0609/vendor_xiaomi_sm6150-common" path="vendor/xiaomi/sm6150-common" remote="gh" revision="eleven" />
-    <project name="pcoopergit/vendor_xiaomi_ANXCamera" path="vendor/xiaomi/ANXCamera" remote="gh" revision="185R" />
+    <project name="vendor_xiaomi_mojito" path="vendor/xiaomi/mojito" remote="Sakura-Devices" revision="11" />
+    <project name="vendor_xiaomi_mojito-common" path="vendor/xiaomi/sm6150-common" remote="Sakura-Devices" revision="11" />
+    <project name="pcoopergit/vendor_xiaomi_ANXCamera" path="vendor/xiaomi/ANXCamera" remote="github" revision="185R" />
     
     <!-- Kernel tree -->
-    <project name="PixelExperience-Devices/kernel_xiaomi_mojito" path="kernel/xiaomi/sm6150" remote="gh" revision="eleven" />
+    <project name="PixelExperience-Devices/kernel_xiaomi_mojito" path="kernel/xiaomi/sm6150" remote="github" revision="eleven" />
 
     <!-- Proton Blur -->>
     <remove-project name="frameworks_native" />
-    <project name="ProjectSakura/frameworks_native" path="frameworks/native" remote="gh" revision="11-blur" />
+    <project name="frameworks_native" path="frameworks/native" remote="sakura" revision="11-blur" />
 </manifest>
