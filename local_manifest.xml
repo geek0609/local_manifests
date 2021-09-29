@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Using hubgit to avoid conflict -->
-    <remote name ="hubgit" fetch = "https://github.com"/>
     <!-- Device trees -->
-    <project name="Sakura-Devices/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="hubgit" revision="11" />
+    <project name="Sakura-Devices/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="11" />
 
     <!-- Vendor trees -->
-    <project name="Sakura-Devices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="hubgit" revision="R" />
-    <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="hubgit" revision="eleven" />
+    <project name="Sakura-Devices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="11" />
+    <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="eleven" />
 
     <!-- Kernel tree and clang -->
-    <project name="ArrowOS-Devices/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="hubgit" revision="arrow-11.0" />
-    <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="hubgit" revision="ruby-12" />
+    <project name="Sakura-Devices/kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="11" />
+    <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="github" revision="ruby-12" />
 
     <!-- Required HALs -->
     <remove-project name="android_hardware_qcom_audio" />
@@ -28,5 +26,5 @@
 
     <!-- Proton Blur -->>
     <remove-project name="frameworks_native" />
-    <project name="ProjectSakura/frameworks_native" path="frameworks/native" remote="hubgit" revision="11-blur" />
+    <project name="ProjectSakura/frameworks_native" path="frameworks/native" remote="github" revision="11-blur" />
 </manifest>
