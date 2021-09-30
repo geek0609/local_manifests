@@ -11,5 +11,7 @@
     <project name="pcoopergit/vendor_xiaomi_ANXCamera" path="vendor/xiaomi/ANXCamera" remote="gh" revision="185R" />
     
     <!-- Kernel tree -->
-    <project name="PixelExperience-Devices/kernel_xiaomi_mojito" path="kernel/xiaomi/sm6150" remote="gh" revision="eleven" />
+    <project name="Neternels/android_kernel_xiaomi_mojito" path="kernel/xiaomi/sm6150" remote="github" revision="LA.UM.9.1" />
+    <project name="StatiXOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" path="prebuilts/gcc/linux-x86/aarch64/arm64-gcc" remote="github" revision="12.0.0" />
+
 </manifest>
